@@ -1,0 +1,61 @@
+.header {
+    margin-bottom: 33px;
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    &__logo {
+        display: block;
+        max-width: 166px;
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 39.3px;
+        &-link {
+            font-weight: 400;
+            color: #383838;
+            font-size: 22px;
+            line-height: 23px;
+            display: block;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: #fda301;
+            }
+        }
+        &-btn {
+            width: 248px;
+            font-weight: lighter !important;
+            height: 45px;
+            font-family: inherit;
+            color: #383838;
+            font-size: 22px;
+            line-height: 23px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .header {
+        &__wrapper {
+            padding: 0 16px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__wrapper {
+            padding: 0 16px;
+        }
+        &__actions {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.footer {
+    padding: 62px 0 50px;
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 124%;
+        height: 524px;
+        border-radius: 50%;
+        border: 1px solid #23dded;
+        position: absolute;
+    }
+    &::before {
+        top: 10px;
+        left: 0;
+        transform: rotate(3.7deg);
+        z-index: -3;
+    }
+    &::after {
+        top: 20px;
+        z-index: -2;
+        left: 50%;
+        transform: translateX(-50%) rotate(4deg);
+        background: #ccfafe;
+    }
+    &__wrap {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        height: 111px;
+        justify-content: space-between;
+        &:nth-child(1) {
+            margin-right: 93px;
+        }
+    }
+    &__title {
+        font-size: 22px;
+        line-height: 23px;
+    }
+    &__content {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        display: flex;
+        color: #383838;
+        a {
+            color: #383838;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: #fda301;
+            }
+        }
+    }
+    &__copyright {
+        margin-left: auto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        transition: 0.3s ease-in-out;
+        color: #383838;
+        &--tel:hover {
+            color: #fda301;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .footer {
+        &::before,
+        &::after {
+            height: 320px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .footer {
+        &:nth-child(1) {
+            margin-right: 80px;
+        }
+        &__contacts {
+            height: 80px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        &::before,
+        &::after {
+            width: 200%;
+        }
+        padding: 60px 0 10px;
+        &__wrap {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            column-gap: 40px;
+            row-gap: 25px;
+        }
+        &__copyright {
+            width: 100%;
+            text-align: center;
+        }
+        &__contacts {
+            &:nth-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+}

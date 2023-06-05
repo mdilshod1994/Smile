@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Blue-curve";
+    src: url("@/assets/css/fonts/Bluecurve-Light.eot");
+    src: url("@/assets/css/fonts/Bluecurve-Light.eot?#iefix") format("embedded-opentype"),
+        url("@/assets/css/fonts/Bluecurve-Light.woff") format("woff"),
+        url("@/assets/css/fonts/Bluecurve-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    @font-face {
+        font-family: "Blue-curve";
+        src: url("@/assets/css/fonts/Bluecurve-Regular.eot");
+        src: url("@/assets/css/fonts/Bluecurve-Regular.eot?#iefix") format("embedded-opentype"),
+            url("@/assets/css/fonts/Bluecurve-Regular.woff") format("woff"),
+            url("@/assets/css/fonts/Bluecurve-Regular.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+    }
+}
+@font-face {
+    font-family: "Blue-curve";
+    src: url("@/assets/css/fonts/Bluecurve-Bold.eot");
+    src: url("@/assets/css/fonts/Bluecurve-Bold.eot?#iefix") format("embedded-opentype"),
+        url("@/assets/css/fonts/Bluecurve-Bold.woff") format("woff"),
+        url("@/assets/css/fonts/Bluecurve-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}

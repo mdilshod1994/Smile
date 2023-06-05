@@ -1,0 +1,144 @@
+.about {
+    height: 557px;
+    overflow: hidden;
+    margin-bottom: 95px;
+    &__wrap {
+        position: relative;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid #23dded;
+            z-index: -1;
+        }
+        &::after {
+            left: -142px;
+            top: 0;
+            width: 1830px;
+            height: 453px;
+            z-index: -2;
+        }
+        &::before {
+            left: -46px;
+            background: #ccfafe;
+            width: 1830px;
+            height: 524px;
+        }
+    }
+    &__img {
+        width: 407px;
+        border-radius: 16px;
+        border: 1px solid #38e1ef;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__text {
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .about {
+        height: 450px;
+        .container {
+            height: 100%;
+        }
+        &__wrap {
+            height: 100%;
+            &::before,
+            &::after {
+                height: 100%;
+            }
+        }
+        &__img {
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    .about {
+        height: 370px;
+        &__text {
+            font-size: 18px;
+        }
+        &__content {
+            gap: 20px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        height: 370px;
+        &__text {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        &__content {
+            gap: 10px;
+        }
+        &__wrap {
+            gap: 25px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        height: auto;
+        &__wrap {
+            &::after,
+            &::before {
+                left: -50%;
+            }
+        }
+        &__img {
+            height: auto;
+            width: 160px;
+        }
+    }
+}
+@media (max-width: 560px) {
+    .about {
+        padding-bottom: 95px;
+        margin-bottom: 0;
+        &__text {
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        &__wrap {
+            &::after,
+            &::before {
+                left: -80%;
+                top: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .about {
+        height: auto;
+        &__text {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        &__img {
+            height: auto;
+            width: 160px;
+        }
+        &__wrap {
+            flex-direction: column;
+        }
+    }
+}
